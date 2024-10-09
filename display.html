@@ -1,0 +1,16 @@
+{{define "display"}}
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Informations Utilisateur</title>
+</head>
+<body>
+    <h1>Informations Utilisateur</h1>
+    <p>Prénom : {{ .FirstName }}</p>
+    <p>Nom : {{ .LastName }}</p>
+    <p>Date de naissance : {{ .BirthDate }}</p>
+    <p>Sexe : {{ .Gender }}</p>
+</body>
+</html>
+{{end}}
