@@ -1,0 +1,19 @@
+{{define "promo"}}
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Promotion</title>
+</head>
+<body>
+    <h1>{{ .Name }} - {{ .Department }} - {{ .Level }}</h1>
+    <ul>
+        {{ range .StudentList }}
+        <li>{{ .FirstName }} {{ .LastName }} - {{ .Age }} ans - 
+            <img src="/static/{{ if eq .Gender "masculin" }}male.png{{ else }}female.png{{ end }}" alt="Genre">
+        </li>
+        {{ end }}
+    </ul>
+</body>
+</html>
+{{end}}
